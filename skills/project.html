@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Learning</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+
+        <!-- Google Translate Widget -->
+    <div id="google_translate_element"></div>
+    
+    <!-- Community Learning Section -->
+    <section id="community-learning">
+      <h2>🌱 Community-Driven Learning & Collaboration</h2>
+      <p>
+        Join a network of learners, mentors, and entrepreneurs working together
+        for growth.
+      </p>
+
+      <div class="learning-container">
+        <!-- Peer-to-Peer Learning -->
+        <div class="learning-item">
+          <img
+            src="images/32909283777_8bf9ea6048_o_hk2wtk_1593262976.jpg"
+            alt="Peer Learning"
+          />
+          <h3>🤝 Peer-to-Peer Learning</h3>
+          <p>
+            Learn from rural entrepreneurs who share their experiences and best
+            practices.
+          </p>
+          <a href="peer.html" class="learn-more">Learn More</a>
+        </div>
+
+        <!-- Local Training Hubs -->
+        <div class="learning-item">
+          <img src="images/16533.jpg" alt="Local Training Hubs" />
+          <h3>🏡 Local Training Hubs</h3>
+          <p>
+            Find community centers with mentors and resources to support your
+            journey.
+          </p>
+          <a href="training.html" class="learn-more">Find Hubs</a>
+        </div>
+
+        <!-- Project-Based Learning -->
+        <div class="learning-item">
+          <img src="images/2151205701.jpg" alt="Project-Based Learning" />
+          <h3>🔨 Project-Based Learning</h3>
+          <p>
+            Apply your knowledge to real-world projects and gain hands-on
+            experience.
+          </p>
+          <a href="based.html" class="learn-more">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleChatbot() {
+        const chatbot = document.getElementById("chatbot-window");
+        chatbot.style.display = chatbot.style.display === "block" ? "none" : "block";
+      }
+  
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'en,hi,gu,bn,kn,ml,mr,pa,ta,te,ur,or,as,sd,ne,sa,mai,raj',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+  </body>
+</html>
